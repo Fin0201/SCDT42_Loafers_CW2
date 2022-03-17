@@ -1,5 +1,7 @@
 .banner{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: 45vh;
+}
+
+.container-fluid-s{
+ margin: 0 15%;
 }
