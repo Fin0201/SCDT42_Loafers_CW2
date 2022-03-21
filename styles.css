@@ -1,7 +1,53 @@
 .banner{
     height: 40vh;
+    padding: 0;
 }
 
 .container-fluid-s{
  margin: 0 15%;
+}
+
+body{
+background-color: white;
+}
+
+.navbar{
+    background-color: #FFE8B9;
+}
+
+footer{
+    background-color: #FFE8B9;
+    
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    padding-right: 2%;
+}
+
+.pseudoRelative{
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 0;
+}
+
+.titleBanner{
+    height: 14vh;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    padding: 0;
+}
+
+.title{
+    position: relative;
+    bottom: 10vh;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
 }
