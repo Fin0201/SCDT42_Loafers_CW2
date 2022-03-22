@@ -1,19 +1,10 @@
-function sendForm(){
-    const email = document.getElementById("email").value;
-    const enquiry = document.getElementById("email").value;
-
-
-    if(email === "" | enquiry === ""){
-        if(email === ""){
-            document.getElementById("email-error").innerHTML = "Please enter an email address.";
-        }
-        if(enquiry === ""){
-            document.getElementById("enquiry-srror").innerHTML = "Please enter your enquiry.";
-        }
-    }
-    else{
-        document.getElementById("form-sent").innerHTML = "Form successfully sent!";
-    }
+function changeText(){
+    var name = document.getElementById("welcome-form").fname.value;
+    var welcome="Thank you for submitting " + name + "!";
+    document.getElementById("welcome-text").innerHTML = welcome;
 }
 
 //weather api
+
+
+//enable/disable css class for sdark mode
