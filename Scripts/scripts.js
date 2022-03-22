@@ -5,16 +5,15 @@ function sendForm(){
 
     if(email === "" | enquiry === ""){
         if(email === ""){
-            document.getElementById("emailError").innerHTML = "Please enter an email address.";
-            console.log("emai")
+            document.getElementById("email-error").innerHTML = "Please enter an email address.";
         }
         if(enquiry === ""){
-            document.getElementById("enquiryError").innerHTML = "Please enter your enquiry.";
-            console.log("enq")
+            document.getElementById("enquiry-srror").innerHTML = "Please enter your enquiry.";
         }
     }
     else{
-        document.getElementById("formSent").innerHTML = "Form successfully sent!";
-        console.log("wokd")
+        document.getElementById("form-sent").innerHTML = "Form successfully sent!";
     }
 }
+
+//weather api
