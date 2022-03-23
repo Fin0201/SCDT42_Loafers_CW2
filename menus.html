@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="images/sandwich_logo.png">
-    <title>Menus</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="images/sandwich_logo.png">
+  <title>Menus</title>
 </head>
 
 
@@ -15,7 +17,8 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Loafers Sandwhich Bar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNav">
@@ -24,14 +27,17 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  active" aria-current="page" href="menu.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" aria-current="page" href="menu.html" id="navbarDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menus
             </a>
             <ul class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item dropdown-active" href="menus.html">All Menus</a><hr></li>
+              <li><a class="dropdown-item dropdown-current-page" href="menus.html">All Menus</a>
+                <hr>
+              </li>
               <li><a class="dropdown-item" href="breakfasts.html">Breakfast Menu</a></li>
-              <li><a class="dropdown-item" href="burgers_chips_jackets.html">Burgers Chips, & Jackets</a></li>
-              <li><a class="dropdown-item" href="paninis_wraps_roasts.html">Paninis Wraps, & Roasts</a></li>
+              <li><a class="dropdown-item" href="burgers_chips_jackets.html">Burgers, Chips & Jackets</a></li>
+              <li><a class="dropdown-item" href="paninis_wraps_roasts.html">Paninis, Wraps & Roasts</a></li>
               <li><a class="dropdown-item" href="cold_fillings_salads.html">Cold Fillings & Salads</a></li>
             </ul>
           </li>
@@ -46,12 +52,8 @@
     </div>
   </nav>
 
-  <div class="row p-0 m-0">
-    <img src="images/banner.jpg" class="w-100 banner" alt="Banner">
-    <div class="relative-absolute-position">
-      <p class="w-100 title-background"></p>
-      <h1 class="title">Our Menus</h1>
-    </div>
+  <div>
+    <h1 class="title">Our Menus!</h1>
   </div>
 
 
@@ -61,12 +63,13 @@
       <div class="row">
         <div class="col menu-box">
           <div class="card">
-            <a href="paninis_wraps_roasts.html">
-              <img src="images/paninis_wraps_roasts.png" class="card-img-top" alt="Paninis, Wraps & Roasts">
-              <h5 class="card-title">Paninis, Wraps & Roasts</h5>
+            <a href="breakfasts.html">
+              <img src="images/breakfasts.png" class="card-img-top" alt="Breakfasts">
+              <h5 class="card-title">Breakfasts</h5>
             </a>
           </div>
         </div>
+
         <div class="col menu-box">
           <div class="card">
             <a href="burgers_chips_jackets.html">
@@ -79,15 +82,15 @@
       <div class="row">
         <div class="col menu-box">
           <div class="card">
-            <a href="breakfasts.html">
-              <img src="images/breakfasts.png" class="card-img-top" alt="Breakfasts">
-              <h5 class="card-title">Breakfasts</h5>
+            <a href="paninis_wraps_roasts.html">
+              <img src="images/paninis_wraps_roasts.png" class="card-img-top" alt="Paninis, Wraps & Roasts">
+              <h5 class="card-title">Paninis, Wraps & Roasts</h5>
             </a>
           </div>
         </div>
         <div class="col menu-box">
           <div class="card">
-            <a href="cold_fillings_salads">
+            <a href="cold_fillings_salads.html">
               <img src="images/cold_fillings_salads.png" class="card-img-top" alt="Cold Fillings & Salads">
               <h5 class="card-title">Cold Fillings & Salads</h5>
             </a>
@@ -101,7 +104,7 @@
 
 
 <footer class="w-100 fixed-bottom">
-  <div class="p-3">
+  <div class="footer-content p-3">
     <a href="https://facebook.com/loaferstaunton" target="_blank"><img class="footerImage" src="Images/facebook.png"
         alt="Facebook Logo" width="25" height="25"> Facebook</a>
     <a href="https://twitter.com/loaferstaunton" target="_blank"><img class="footerImage" src="Images/twitter.png"
