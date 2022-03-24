@@ -9,14 +9,14 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
   <link rel="icon" href="images/sandwich_logo.png">
-  <title>Menus</title>
+  <title>Our Menus</title>
 </head>
 
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid navbar-conten">
-      <a class="navbar-brand" href="index.html">Loafers Sandwhich Bar</a>
+<body id="body">
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid navbar-content">
+      <a class="navbar-brand main-nav" href="index.html">Loafers Sandwhich Bar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,12 +27,12 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" aria-current="page" href="menu.html" id="navbarDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Menus
             </a>
-            <ul class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item dropdown-current-page" href="menus.html">All Menus</a>
+            <ul id="nav-dropdown" class="dropdown-menu nav-dropdown active" aria-current="page" aria-labelledby="navbarDropdownMenuLink">
+              <li><a id="current-dropdown" class="dropdown-item dropdown-current-page" href="menus.html">All Menus</a>
                 <hr>
               </li>
               <li><a class="dropdown-item" href="breakfasts.html">Breakfast Menu</a></li>
@@ -49,19 +49,20 @@
           </li>
         </ul>
         <div class="ms-auto">
-          <div id="dark-button" class="btn btn-primary mx-3 rounded" onclick="toggleDark()">My Account</div>
+          <div id="dark-button" class="btn btn-primary mx-3 rounded" onclick="toggleDark()">Dark Mode</div>
         </div>
       </div>
     </div>
   </nav>
 
   <div>
-    <h1 class="title">Our Menus!</h1>
+    <h1 id="title" class="title">Our Menus!</h1>
   </div>
 
 
 
-  <section id="menu-cards">
+  <section id="main-content">
+    <div id="menu-cards">
     <div class="container-fluid">
       <div class="row">
         <div class="col menu-box">

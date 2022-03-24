@@ -13,13 +13,13 @@
 </head>
 
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Loafers Sandwhich Bar</a>
+<body id="body">
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid navbar-content">
+      <a class="navbar-brand main-nav" href="index.html">Loafers Sandwhich Bar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon navbar-conten"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -31,7 +31,7 @@
               data-bs-toggle="dropdown" aria-expanded="false">
               Menus
             </a>
-            <ul class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+            <ul id="nav-dropdown" class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="menus.html">All Menus</a>
                 <hr>
               </li>
@@ -49,18 +49,18 @@
           </li>
         </ul>
         <div class="ms-auto">
-          <div id="account" class="btn btn-primary mx-3 rounded" onclick="toggleDark()">My Account</div>
+          <div id="dark-button" class="btn btn-primary mx-3 rounded" onclick="toggleDark()">Dark Mode</div>
         </div>
       </div>
     </div>
   </nav>
 
   <div>
-    <h1 class="title">Contact Us!</h1>
+    <h1 id="title" class="title">Contact Us!</h1>
   </div>
 
   <div class="container-fluid">
-    <div class="page-content">
+    <div id="main-content" class="page-content">
       <p class="pt-3 text-decoration-underline">How to Contact Us:</p>
       <p class="m-0">If you would like to place an order, please call:</p>
       <p>01823 337 593</p>

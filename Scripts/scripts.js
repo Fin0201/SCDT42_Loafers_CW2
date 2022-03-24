@@ -19,25 +19,41 @@ var darkStatus = localStorage.getItem("darkMode");
 darkStatus = JSON.parse(darkStatus);
 
 if (darkStatus === true){
-    document.getElementById("main-content").classList.toggle("content-dark");
+    document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
+    document.getElementById("nav-dropdown").classList.toggle("nav-dropdown-dark");
+    document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
     document.getElementById("title").classList.toggle("title");
     document.getElementById("title").classList.toggle("title-dark");
+    document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
     document.getElementById("facebook-logo").src="images/facebook_inverted.png";
     document.getElementById("twitter-logo").src="images/twitter_inverted.png";
+
+    var cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.toggle("card-dark");
+    }
 }
 
 function toggleDark(){
-    document.getElementById("main-content").classList.toggle("body-dark");
+    document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
+    document.getElementById("nav-dropdown").classList.toggle("nav-dropdown-dark");
+    document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
     document.getElementById("title").classList.toggle("title");
     document.getElementById("title").classList.toggle("title-dark");
+    document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
+
+    var cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.toggle("card-dark");
+    }
       
     if (darkStatus === true){
         darkStatus = false;
