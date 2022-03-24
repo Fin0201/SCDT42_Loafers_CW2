@@ -19,23 +19,36 @@ var darkStatus = localStorage.getItem("darkMode");
 darkStatus = JSON.parse(darkStatus);
 
 if (darkStatus === true){
-    console.log("it is dark, do dark things");
+    document.getElementById("main-content").classList.toggle("content-dark");
+    document.getElementById("main-nav").classList.toggle("navbar-dark");
+    document.getElementById("main-nav").classList.toggle("bg-dark");
+    document.getElementById("title").classList.toggle("title");
+    document.getElementById("title").classList.toggle("title-dark");
+    document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
+    document.getElementById("footer").classList.toggle("footer-dark");
+    document.getElementById("facebook-logo").src="images/facebook_inverted.png";
+    document.getElementById("twitter-logo").src="images/twitter_inverted.png";
 }
 
 function toggleDark(){
+    document.getElementById("main-content").classList.toggle("body-dark");
+    document.getElementById("main-nav").classList.toggle("navbar-dark");
+    document.getElementById("main-nav").classList.toggle("bg-dark");
+    document.getElementById("title").classList.toggle("title");
+    document.getElementById("title").classList.toggle("title-dark");
+    document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
+    document.getElementById("footer").classList.toggle("footer-dark");
+      
     if (darkStatus === true){
         darkStatus = false;
         localStorage.setItem("darkMode", darkStatus);
-
-
-        console.log(localStorage.getItem("darkMode"));
+        document.getElementById("facebook-logo").src="images/facebook.png";
+        document.getElementById("twitter-logo").src="images/twitter.png";
     }
     else{
         darkStatus = true;
         localStorage.setItem("darkMode", darkStatus);
-
-
-
-        console.log(localStorage.getItem("darkMode"));
+        document.getElementById("facebook-logo").src="images/facebook_inverted.png";
+        document.getElementById("twitter-logo").src="images/twitter_inverted.png";
     }
 }
