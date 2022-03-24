@@ -7,6 +7,10 @@ body{
 .navbar{
     background-color: #FFE8B9;
 }
+.navbar-content{
+    margin-left: 1%;
+    margin-right: 1%;
+}
 .nav-dropdown{
     background-color: #f7d797;
 }
