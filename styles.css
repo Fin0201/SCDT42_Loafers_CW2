@@ -22,13 +22,13 @@
     background-color: #e0b765;
 }
 .nav-dropdown-dark{
-    background-color: #232629;
+    background-color: #212529;
 }
 .nav-dropdown-dark a{
     color: white;
 }
 .nav-dropdown-dark a:hover{
-    background-color: #32363b;
+    background-color: #2f3338;
     color: white;
 }
 .nav-dropdown-dark a:focus{
@@ -41,7 +41,6 @@
 }
 .dropdown-current-page-dark{
     background-color: #17191b;
-    color: white;
 }
 .title{
     text-align: center;
@@ -51,12 +50,8 @@
     margin: 0;
 }
 .title-dark{
-    background-color: #1c1e20;
+    background-color: #30333a;
     color: white;
-    padding: 2vh 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
 }
 .page-content{
     background-color: white;
@@ -96,13 +91,14 @@
     background-color: #212529;
     color: white;
 }
+.menu-title{
+    padding-top: 12%;
+    padding-bottom: 1%;
+    text-decoration: underline;
+}
 .menu-items{
     margin-top: 3%;
     text-align: center;
-}
-.menu-title{
-    padding-top: 12%;
-    text-decoration: underline;
 }
 .menu-info{
     margin-top: 4%;

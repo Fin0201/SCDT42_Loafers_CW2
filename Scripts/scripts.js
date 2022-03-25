@@ -5,25 +5,24 @@ function changeText(){
     document.getElementById("welcome-text").innerHTML = welcome;
 }
 
-//do a weather api here later
+
+
 
 
 
 
 //Dark mode
-if (localStorage.getItem("darkMode") === null){
-    localStorage.setItem("darkMode", false);
-}
-
-var darkStatus = localStorage.getItem("darkMode");
+var darkStatus = localStorage.getItem("darkMode"); //Retrieves any previous dark mode data from localStorage when visiting a new page.
 darkStatus = JSON.parse(darkStatus);
 
-if (darkStatus === true){
+
+
+if (darkStatus === true){ //checks if the user has previously had dark mode enabled. if true, it will be re-anabled.
     document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
-    document.getElementById("nav-dropdown").classList.toggle("dropdown-current-page");
     document.getElementById("nav-dropdown").classList.toggle("nav-dropdown-dark");
+    document.getElementById("dropdown-hr").classList.toggle("text-white");
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
@@ -31,47 +30,61 @@ if (darkStatus === true){
     document.getElementById("facebook-logo").src="images/facebook_inverted.png";
     document.getElementById("twitter-logo").src="images/twitter_inverted.png";
 
-    try{
-        document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
 
+
+    
+    var currentPage = window.location.pathname.split("/").pop(); //Checks if the pages are correct for these page specific elements.
+
+    if (currentPage === "menus.html"){
         var cards = document.getElementsByClassName("card");
         for (var i = 0; i < cards.length; i++) {
             cards[i].classList.toggle("card-dark");
         }
-    } catch{}
+    }
+    if (currentPage === "menus.html" || currentPage === "breakfasts.html" || currentPage === "burgers_chips_jackets.html" || currentPage === "cold_fillings_salads.html" || currentPage === "paninis_wraps_roasts.html"){
+        document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
+    }
 }
 
-function toggleDark(){
+
+
+function toggleDark(){ //This function is excecuted when the user clicks the dark mode button.
     document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
-    document.getElementById("nav-dropdown").classList.toggle("dropdown-current-page");
     document.getElementById("nav-dropdown").classList.toggle("nav-dropdown-dark");
+    document.getElementById("dropdown-hr").classList.toggle("text-white");
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
 
-    try{
-        document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
 
+
+    var currentPage = window.location.pathname.split("/").pop();
+    if (currentPage === "menus.html"){
         var cards = document.getElementsByClassName("card");
         for (var i = 0; i < cards.length; i++) {
             cards[i].classList.toggle("card-dark");
         }
-    } catch{}
-    
-        
+    }
+    if (currentPage === "menus.html" || currentPage === "breakfasts.html" || currentPage === "burgers_chips_jackets.html" || currentPage === "cold_fillings_salads.html" || currentPage === "paninis_wraps_roasts.html"){
+        document.getElementById("current-dropdown").classList.toggle("dropdown-current-page-dark");
+    }
 
-    if (darkStatus === true){
-        darkStatus = false;
-        localStorage.setItem("darkMode", darkStatus);
-        document.getElementById("facebook-logo").src="images/facebook.png";
-        document.getElementById("twitter-logo").src="images/twitter.png";
+
+
+    if (darkStatus === true){ //This keeps track and stores whether dark mode is enabled or not.
+    darkStatus = false;
+    localStorage.setItem("darkMode", darkStatus);
+
+    document.getElementById("facebook-logo").src="images/facebook.png";
+    document.getElementById("twitter-logo").src="images/twitter.png";
     }
     else{
         darkStatus = true;
         localStorage.setItem("darkMode", darkStatus);
+
         document.getElementById("facebook-logo").src="images/facebook_inverted.png";
         document.getElementById("twitter-logo").src="images/twitter_inverted.png";
     }
