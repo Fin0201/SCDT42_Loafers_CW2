@@ -25,7 +25,6 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
     document.getElementById("dropdown-hr").classList.toggle("text-white");
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
-    document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
     document.getElementById("facebook-logo").src="images/facebook_inverted.png";
     document.getElementById("twitter-logo").src="images/twitter_inverted.png";
@@ -56,7 +55,6 @@ function toggleDark(){ //This function is excecuted when the user clicks the dar
     document.getElementById("dropdown-hr").classList.toggle("text-white");
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
-    document.getElementById("footer-spacing").classList.toggle("footer-spacing-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
 
 
