@@ -1,8 +1,8 @@
 //Enquiry form
 function changeText(){
-    var name = document.getElementById("welcome-form").fname.value;
+    var name = document.getElementById("enquiry-form").fname.value;
     var welcome="Thank you for submitting " + name + "!";
-    document.getElementById("welcome-text").innerHTML = welcome;
+    document.getElementById("enquiry-text").innerHTML = welcome;
 }
 
 
