@@ -109,8 +109,9 @@ body{
     text-align: right;
     font-size: 18px;
 }
-#map-loction{
-    border: 0;
+#map-location{
+    
+    max-width: 95%;
 }
 #form-area{
     text-align: center;
