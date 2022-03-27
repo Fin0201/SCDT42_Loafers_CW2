@@ -109,8 +109,14 @@ body{
     text-align: right;
     font-size: 18px;
 }
-.form-area{
+#map-loction{
+    border: 0;
+}
+#form-area{
     text-align: center;
+}
+.form-inputs{
+    max-width: 95%;
 }
 #footer-spacing{
     height: 75px;
