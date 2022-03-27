@@ -79,29 +79,29 @@
       <p id="weather-info"></p>
 
       <p class="pt-5 m-0 mt-3 text-decoration-underline">Further Enquires:</p>
-      <p>if you have any further enquires, please fill out this form and we will email you back as soon as we can!</p>
+      <p class="mb-3">if you have any further enquires, please fill out this form and we will email you back as soon as we can!</p>
 
 
-      <section class="form-area">
-        <div class="container-fluid p-0 m-0">
-          <div id="welcome-text">
-            <form onsubmit="changeText()" method="post" id="welcome-form">
-              <label>Please enter your name:</label><br>
-              <input type="text" placeholder="Enter name..." name="fname" required><br>
-              <br>
-              <label>Please enter your email:</label><br>
-              <input type="email" placeholder="Enter email..." required><br>
-              <br>
-              <label>Please enter your enquiry:</label><br>
-              <textarea cols="48" rows="12" placeholder="Enter enquiry..." required></textarea><br>
-              <input type="submit" value="Submit!">
-            </form>
-          </div>
-        </div>
-      </section>
+
     </div>
   </div>
-
+  <section class="form-area">
+    <div class="container-fluid p-0 m-0">
+      <div class="form-position">
+        <form onsubmit="changeText()" method="post" id="enquiry-form">
+          <label>Please enter your name:</label><br>
+          <input type="text" placeholder="Enter name..." name="fname" required><br>
+          <br>
+          <label>Please enter your email:</label><br>
+          <input type="email" placeholder="Enter email..." required><br>
+          <br>
+          <label>Please enter your enquiry:</label><br>
+          <textarea cols="48" rows="12" placeholder="Enter enquiry..." required></textarea><br>
+          <input type="submit" value="Submit!">
+        </form>
+      </div>
+    </div>
+  </section>
   <div id="footer-spacing"></div>
 </body>
 
