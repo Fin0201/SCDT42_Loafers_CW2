@@ -72,8 +72,8 @@ body{
     color: white;
 }
 #loyalty-card{
-    max-height: 30vh;
-    min-height: 15em;
+    max-height: 22em;
+    /*min-height: 15em;*/
     max-width: 100%;
 }
 #menu-cards{
