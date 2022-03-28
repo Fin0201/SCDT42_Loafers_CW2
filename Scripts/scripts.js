@@ -2,10 +2,8 @@
 function changeText(){
     var name = document.getElementById("enquiry-form").fname.value;
     var welcome="Thank you for submitting " + name + "!";
-    document.getElementById("enquiry-text").innerHTML = welcome;
+    document.getElementById("enquiry-text").innerHTML = `<p style="color: limegreen;">Thank you for submitting your enquiry ${name}!<br>We will get back to you shortly!</p>`;
 }
-
-
 
 
 
