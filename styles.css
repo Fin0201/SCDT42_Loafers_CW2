@@ -120,6 +120,9 @@ body{
 .form-inputs{
     max-width: 100%;
 }
+.form-submitted{
+    color: limegreen;
+}
 #footer-spacing{
     height: 75px;
 }
