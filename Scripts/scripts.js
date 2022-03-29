@@ -13,8 +13,8 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
-    document.getElementById("facebook-logo").src="images/facebook_inverted.png";
-    document.getElementById("twitter-logo").src="images/twitter_inverted.png";
+    document.getElementById("facebook-logo").src="Images/facebook_inverted.png";
+    document.getElementById("twitter-logo").src="Images/twitter_inverted.png";
     
     var currentPage = window.location.pathname.split("/").pop(); //Checks if the pages are correct before changing these next elements to avoid errors.
 
@@ -58,14 +58,14 @@ function toggleDark(){
     darkStatus = false;
     localStorage.setItem("darkMode", darkStatus);
 
-    document.getElementById("facebook-logo").src="images/facebook.png";
-    document.getElementById("twitter-logo").src="images/twitter.png";
+    document.getElementById("facebook-logo").src="Images/facebook.png";
+    document.getElementById("twitter-logo").src="Images/twitter.png";
     }
     else{
         darkStatus = true;
         localStorage.setItem("darkMode", darkStatus);
 
-        document.getElementById("facebook-logo").src="images/facebook_inverted.png";
-        document.getElementById("twitter-logo").src="images/twitter_inverted.png";
+        document.getElementById("facebook-logo").src="Images/facebook_inverted.png";
+        document.getElementById("twitter-logo").src="Images/twitter_inverted.png";
     }
 }
