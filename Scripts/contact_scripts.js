@@ -1,3 +1,13 @@
+//Enquiry form
+function changeText(){
+    var name = document.getElementById("enquiry-form").fname.value;
+    var welcome="Thanks for submitting " + name + "!";
+    document.getElementById("enquiry-text").innerHTML = `<p class="form-submitted mt-5">Thank you for submitting your enquiry ${name}!<br>We will get back to you shortly on the email you provided us!</p>`;
+}
+
+
+
+//Weather API
 const APIKey = "842e529cd47863da2b0a026cf55a9d4b";
 const shopLocation = "51.0140606,-3.1053471";
 

@@ -1,14 +1,3 @@
-//Enquiry form
-function changeText(){
-    var name = document.getElementById("enquiry-form").fname.value;
-    var welcome="Thanks for submitting " + name + "!";
-    document.getElementById("enquiry-text").innerHTML = `<p class="form-submitted mt-5">Thank you for submitting your enquiry ${name}!<br>We will get back to you shortly on the email you provided!</p>`;
-}
-
-
-
-
-
 //Dark mode
 var darkStatus = localStorage.getItem("darkMode"); //Retrieves any previous dark mode data from localStorage when visiting a new page.
 darkStatus = JSON.parse(darkStatus);
@@ -26,11 +15,8 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
     document.getElementById("footer").classList.toggle("footer-dark");
     document.getElementById("facebook-logo").src="images/facebook_inverted.png";
     document.getElementById("twitter-logo").src="images/twitter_inverted.png";
-
-
-
     
-    var currentPage = window.location.pathname.split("/").pop(); //Checks if the pages are correct for these page specific elements.
+    var currentPage = window.location.pathname.split("/").pop(); //Checks if the pages are correct before changing these next elements to avoid errors.
 
     if (currentPage === "menus.html"){
         var cards = document.getElementsByClassName("card");
@@ -45,7 +31,7 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
 
 
 
-function toggleDark(){ //This function is excecuted when the user clicks the dark mode button.
+function toggleDark(){
     document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
@@ -54,8 +40,6 @@ function toggleDark(){ //This function is excecuted when the user clicks the dar
     document.getElementById("title").classList.toggle("title-dark");
     document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
-
-
 
     var currentPage = window.location.pathname.split("/").pop();
     if (currentPage === "menus.html"){

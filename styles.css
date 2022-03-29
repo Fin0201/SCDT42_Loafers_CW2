@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 body{
     min-height: 100vh;
     position: relative;
@@ -5,6 +6,10 @@ body{
 }
 .navbar{
     background-color: #FFE8B9;
+}
+.navbar-brand{
+    font-family: 'Merienda', cursive;
+    font-weight: 500;
 }
 .navbar-content{
     margin-left: 1%;
@@ -53,6 +58,8 @@ body{
     padding: 2vh 0;
     width: 100%;
     margin: 0;
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
 }
 .title-dark{
     background-color: #30333a;
@@ -73,7 +80,6 @@ body{
 }
 #loyalty-card{
     max-height: 22em;
-    /*min-height: 15em;*/
     max-width: 100%;
 }
 #menu-cards{
