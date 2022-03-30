@@ -1,4 +1,5 @@
 //Dark mode
+var currentPage = window.location.pathname.split("/").pop();
 var darkStatus = localStorage.getItem("darkMode"); //Retrieves any previous dark mode data from localStorage when visiting a new page.
 darkStatus = JSON.parse(darkStatus);
 
@@ -16,9 +17,7 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
     document.getElementById("facebook-logo").src="Images/facebook_inverted.png";
     document.getElementById("twitter-logo").src="Images/twitter_inverted.png";
     
-    var currentPage = window.location.pathname.split("/").pop(); //Checks if the pages are correct before changing these next elements to avoid errors.
-
-    if (currentPage === "menus.html"){
+    if (currentPage === "menus.html"){ //Checks if the pages are correct before changing these next elements to avoid errors.
         var cards = document.getElementsByClassName("card");
         for (var i = 0; i < cards.length; i++) {
             cards[i].classList.toggle("card-dark");
@@ -41,7 +40,6 @@ function toggleDark(){
     document.getElementById("main-content").classList.toggle("content-dark");
     document.getElementById("footer").classList.toggle("footer-dark");
 
-    var currentPage = window.location.pathname.split("/").pop();
     if (currentPage === "menus.html"){
         var cards = document.getElementsByClassName("card");
         for (var i = 0; i < cards.length; i++) {
@@ -54,7 +52,7 @@ function toggleDark(){
 
 
 
-    if (darkStatus === true){ //This keeps track and stores whether dark mode is enabled or not.
+    if (darkStatus === true){ //This keeps track of and stores whether dark mode is enabled or not.
     darkStatus = false;
     localStorage.setItem("darkMode", darkStatus);
 
