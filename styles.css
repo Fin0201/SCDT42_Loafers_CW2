@@ -42,7 +42,7 @@ body{
     color: white;
 }
 .nav-dropdown-dark a:focus{
-    background-color: #32363b;
+    background-color: #2f3338;
     color: white;
 }
 .nav-dropdown-dark a:active{
@@ -62,20 +62,20 @@ body{
     font-weight: 700;
 }
 .title-dark{
-    background-color: #30333a;
+    background-color: #282c31;
     color: white;
 }
 .page-content{
     background-color: white;
     color: black;
     font-size: 18px;
-    padding-top: 3%;
+    margin-top: 3%;
     margin-left: 8%;
     margin-right: 8%;
     text-align: center;
 }
 .content-dark{
-    background-color: #292c30;
+    background-color: #30333a;
     color: white;
 }
 #loyalty-card{
