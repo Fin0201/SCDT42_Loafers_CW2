@@ -1,5 +1,5 @@
 //Dark mode
-var currentPage = window.location.pathname.split("/").pop();
+var currentPage = window.location.pathname.split("/").pop(); //Gets the current page the user is on.
 var darkStatus = localStorage.getItem("darkMode"); //Retrieves any previous dark mode data from localStorage when visiting a new page.
 darkStatus = JSON.parse(darkStatus);
 
@@ -30,7 +30,7 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
 
 
 
-function toggleDark(){
+function toggleDark(){ //Activates when the user clicks the dark mode button.
     document.getElementById("body").classList.toggle("content-dark");
     document.getElementById("main-nav").classList.toggle("navbar-dark");
     document.getElementById("main-nav").classList.toggle("bg-dark");
