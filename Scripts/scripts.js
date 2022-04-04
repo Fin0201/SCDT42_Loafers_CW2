@@ -19,7 +19,7 @@ if (darkStatus === true){ //checks if the user has previously had dark mode enab
     
     if (currentPage === "menus.html"){ //Checks if the pages are correct before changing these next elements to avoid errors.
         var cards = document.getElementsByClassName("card");
-        for (var i = 0; i < cards.length; i++) {
+        for (var i = 0; i < cards.length; i++) { //Loop used to apply dark mode for every element in the 'card' class.
             cards[i].classList.toggle("card-dark");
         }
     }
